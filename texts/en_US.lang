@@ -2,3 +2,4 @@ pack.name=MihailoMatovicPack
 pack.description=Add on for the assignment
 
 item.spawn_egg.entity.mm:gate.name=Gate
+entity.mm:gate.name=Gate
