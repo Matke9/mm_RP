@@ -1,0 +1,13 @@
+{
+  "format_version": "1.14.0",
+  "sound_definitions": {
+    "gate.open": {
+      "category": "block",
+      "sounds": ["sounds/door_open"]
+    },
+    "gate.close": {
+      "category": "block",
+      "sounds": ["sounds/door_close"]
+    }
+  }
+}

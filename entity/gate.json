@@ -1,0 +1,31 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "mm:gate",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/door"
+      },
+      "geometry": {
+        "default": "geometry.gate"
+      },
+      "render_controllers": ["controller.render.gate"],
+      "animations": {
+        "gate_open": "animation.gate.gate_open",
+        "gate_close": "animation.gate.gate_close",
+        "align_rotation": "animation.gate.align"
+      },
+      "animation_controllers": [
+        { "openclose": "controller.animation.gate" },
+        { "align": "controller.animation.gate_align" }
+      ],
+      "spawn_egg": {
+        "texture": "gate_item"
+      },
+      "scripts": {}
+    }
+  }
+}

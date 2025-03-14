@@ -1,0 +1,54 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.gate.gate_open": {
+      "loop": "hold_on_last_frame",
+      "animation_length": 1,
+      "bones": {
+        "LeftWing": {
+          "rotation": {
+            "0.0": [0, 0, 0],
+            "1.0": [0, -90, 0]
+          }
+        },
+        "RightWing": {
+          "rotation": {
+            "0.0": [0, 0, 0],
+            "1.0": [0, 90, 0]
+          }
+        }
+      }
+    },
+    "animation.gate.gate_close": {
+      "loop": "hold_on_last_frame",
+      "animation_length": 1,
+      "bones": {
+        "LeftWing": {
+          "rotation": {
+            "0.0": [0, -90, 0],
+            "1.0": [0, 0, 0]
+          }
+        },
+        "RightWing": {
+          "rotation": {
+            "0.0": [0, 90, 0],
+            "1.0": [0, 0, 0]
+          }
+        }
+      }
+    },
+    "animation.gate.align": {
+      "loop": "hold_on_last_frame",
+      "animation_length": 0.0417,
+      "bones": {
+        "root": {
+          "rotation": [
+            0,
+            "(Math.round(q.body_y_rotation / 90) * 90) - q.body_y_rotation",
+            0
+          ]
+        }
+      }
+    }
+  }
+}
