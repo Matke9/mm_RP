@@ -1,0 +1,35 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "mm:fortune_wheel",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/wheel"
+      },
+      "geometry": {
+        "default": "geometry.fortune_wheel"
+      },
+      "render_controllers": ["controller.render.fortune_wheel"],
+      "animations": {
+        "wheel_spin": "animation.fortune_wheel.spin",
+        "wheel_stay": "animation.fortune_wheel.stay", //just the last frame of the spinning animation to prevent
+        "align_wheel_rotation": "animation.fortune_wheel.align"
+      },
+      "animation_controllers": [
+        {
+          "spin": "controller.animation.fortune_wheel"
+        },
+        {
+          "allign": "controller.animation.fortune_wheel_align"
+        }
+      ],
+      "spawn_egg": {
+        "texture": "gate_item"
+      },
+      "scripts": {}
+    }
+  }
+}

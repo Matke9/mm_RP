@@ -1,0 +1,18 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.fortune_button.press": {
+      "animation_length": 1.0417,
+      "bones": {
+        "button": {
+          "scale": {
+            "0.0": [1, 1, 1],
+            "0.0417": [1, 0.6, 1],
+            "1.0": [1, 0.6, 1],
+            "1.0417": [1, 1, 1]
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.fortune_wheel": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "spin": "query.variant == 1"
+            }
+          ]
+        },
+        "stay": {
+          "animations": ["wheel_stay"],
+          "transitions": [
+            {
+              "spin": "query.variant == 1"
+            }
+          ]
+        },
+        "spin": {
+          "animations": ["wheel_spin"],
+          "transitions": [
+            {
+              "stay": "query.variant == 0"
+            }
+          ],
+          "on_entry": [
+            "variable.prize = query.has_property('mm:prize') ? query.property('mm:prize') : 0;"
+          ]
+        }
+      }
+    }
+  }
+}
