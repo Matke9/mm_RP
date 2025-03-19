@@ -8,6 +8,10 @@
     "gate.close": {
       "category": "block",
       "sounds": ["sounds/door_close"]
+    },
+    "wheel.spin": {
+      "category": "block",
+      "sounds": ["sounds/fortune_wheel"]
     }
   }
 }
