@@ -1,7 +1,7 @@
 {
   "format_version": "1.10.0",
   "animation_controllers": {
-    "controller.animation.gate_align": {
+    "controller.animation.entity_align": {
       "initial_state": "default",
       "states": {
         "default": {

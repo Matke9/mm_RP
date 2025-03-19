@@ -3,3 +3,7 @@ pack.description=Add on for the assignment
 
 item.spawn_egg.entity.mm:gate.name=Gate
 entity.mm:gate.name=Gate
+item.spawn_egg.entity.mm:fortune_wheel.name=Fortune wheel
+entity.mm:fortune_wheel.name=Fortune wheel
+item.spawn_egg.entity.mm:fortune_button.name=Fortune button
+entity.mm:fortune_button.name=Fortune button

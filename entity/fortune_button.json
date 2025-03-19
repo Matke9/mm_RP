@@ -2,25 +2,24 @@
   "format_version": "1.8.0",
   "minecraft:client_entity": {
     "description": {
-      "identifier": "mm:fortune_wheel",
+      "identifier": "mm:fortune_button",
       "materials": {
         "default": "entity_alphatest"
       },
       "textures": {
-        "default": "textures/entity/wheel"
+        "default": "textures/entity/button"
       },
       "geometry": {
-        "default": "geometry.fortune_wheel"
+        "default": "geometry.fortune_button"
       },
-      "render_controllers": ["controller.render.fortune_wheel"],
+      "render_controllers": ["controller.render.fortune_button"],
       "animations": {
-        "wheel_spin": "animation.fortune_wheel.spin",
-        "wheel_stay": "animation.fortune_wheel.stay", //just the last frame of the spinning animation to prevent going back to the default rotation
+        "button_press": "animation.fortune_button.press",
         "align_rotation": "animation.entity.align"
       },
       "animation_controllers": [
         {
-          "spin": "controller.animation.fortune_wheel"
+          "press": "controller.animation.fortune_button"
         },
         {
           "allign": "controller.animation.entity_align"

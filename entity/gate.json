@@ -16,11 +16,11 @@
       "animations": {
         "gate_open": "animation.gate.gate_open",
         "gate_close": "animation.gate.gate_close",
-        "align_rotation": "animation.gate.align"
+        "align_rotation": "animation.entity.align"
       },
       "animation_controllers": [
         { "openclose": "controller.animation.gate" },
-        { "align": "controller.animation.gate_align" }
+        { "align": "controller.animation.entity_align" }
       ],
       "spawn_egg": {
         "texture": "gate_item"

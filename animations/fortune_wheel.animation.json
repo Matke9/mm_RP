@@ -24,19 +24,6 @@
           "rotation": [0, 0, "4500 + (v.prize - 3) * 45"]
         }
       }
-    },
-    "animation.fortune_wheel.align": {
-      "loop": "hold_on_last_frame",
-      "animation_length": 0.0417,
-      "bones": {
-        "root": {
-          "rotation": [
-            0,
-            "(Math.round(q.body_y_rotation / 90) * 90) - q.body_y_rotation",
-            0
-          ]
-        }
-      }
     }
   }
 }

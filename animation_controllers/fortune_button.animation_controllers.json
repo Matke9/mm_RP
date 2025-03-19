@@ -1,0 +1,25 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.fortune_button": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "press": "query.variant == 1"
+            }
+          ]
+        },
+        "press": {
+          "animations": ["button_press"],
+          "transitions": [
+            {
+              "default": "query.variant == 0"
+            }
+          ]
+        }
+      }
+    }
+  }
+}
