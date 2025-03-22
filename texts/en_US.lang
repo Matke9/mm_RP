@@ -7,3 +7,4 @@ item.spawn_egg.entity.mm:fortune_wheel.name=Fortune wheel
 entity.mm:fortune_wheel.name=Fortune wheel
 item.spawn_egg.entity.mm:fortune_button.name=Fortune button
 entity.mm:fortune_button.name=Fortune button
+item.spawn_egg.entity.mm:weaker_warden.name=Weaker warden
