@@ -20,7 +20,7 @@
       "animation_length": 4, // Maintains the final position for 4 seconds
       "bones": {
         "wheel": {
-          "rotation": [0, 0, "(v.prize - 3) * 45"] // Ensures the wheel stays at the calculated prize position
+          "rotation": [0, 0, "v.prize * 45"] // Ensures the wheel stays at the calculated prize position
         }
       }
     }

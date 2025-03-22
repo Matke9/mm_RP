@@ -2,8 +2,18 @@
   "format_version": "1.10.0",
   "animation_controllers": {
     "controller.animation.gate": {
-      "initial_state": "closed", // The gate starts in the "closed" state
+      "initial_state": "default", // The gate starts in the "default" state
       "states": {
+        "default": {
+          "transitions": [
+            {
+              "open": "query.variant == 1" // Switches to "open" state when variant is 1
+            },
+            {
+              "closed": "query.variant == 0" // Switches back to "closed" state when variant is 0
+            }
+          ]
+        },
         "closed": {
           "animations": ["gate_close"], // Plays "gate_close" animation when in this state
           "transitions": [
