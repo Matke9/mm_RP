@@ -2,14 +2,14 @@
   "format_version": "1.8.0",
   "animations": {
     "animation.fortune_button.press": {
-      "animation_length": 1.0417,
+      "animation_length": 1.0417, // Duration of the animation is 1.0417 seconds
       "bones": {
         "button": {
           "scale": {
-            "0.0": [1, 1, 1],
-            "0.0417": [1, 0.6, 1],
-            "1.0": [1, 0.6, 1],
-            "1.0417": [1, 1, 1]
+            "0.0": [1, 1, 1], // Initial scale of the button is normal (1, 1, 1)
+            "0.0417": [1, 0.6, 1], // Button scales to 60% of its height at 0.0417 seconds
+            "1.0": [1, 0.6, 1], // Button remains at 60% height at 1 second
+            "1.0417": [1, 1, 1] // Button returns to original scale at 1.0417 seconds
           }
         }
       }

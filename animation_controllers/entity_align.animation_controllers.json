@@ -2,10 +2,10 @@
   "format_version": "1.10.0",
   "animation_controllers": {
     "controller.animation.entity_align": {
-      "initial_state": "default",
+      "initial_state": "default", // Sets the initial state of the animation controller
       "states": {
         "default": {
-          "animations": ["align_rotation"]
+          "animations": ["align_rotation"] // Plays the "align_rotation" animation in the default state
         }
       }
     }

@@ -2,26 +2,25 @@
   "format_version": "1.8.0",
   "animations": {
     "animation.fortune_wheel.spin": {
-      "loop": "hold_on_last_frame",
-      "animation_length": 4,
+      "loop": "hold_on_last_frame", // Keeps the last frame after the animation ends
+      "animation_length": 4, // The animation lasts for 4 seconds
       "bones": {
         "wheel": {
           "rotation": {
-            "0.0": [0, 0, 0],
-            "1.25": [0, 0, 3200],
-            "3.2": [0, 0, 4400],
-            "4.0": [0, 0, "4500 + (v.prize - 3) * 45"]
+            "0.0": [0, 0, 0], // Initial position
+            "1.25": [0, 0, 3200], // Rotates 3200 degrees at 1.25 seconds
+            "3.2": [0, 0, 4400], // Slows down, reaching 4400 degrees at 3.2 seconds
+            "4.0": [0, 0, "4500 + v.prize * 45"] // Final rotation, determining stopping position based on prize value
           }
         }
       }
     },
     "animation.fortune_wheel.stay": {
-      //prevents the wheel from reseting after the spin animation
-      "loop": "hold_on_last_frame",
-      "animation_length": 4,
+      "loop": "hold_on_last_frame", // Prevents the wheel from resetting after spinning
+      "animation_length": 4, // Maintains the final position for 4 seconds
       "bones": {
         "wheel": {
-          "rotation": [0, 0, "(v.prize - 3) * 45"]
+          "rotation": [0, 0, "(v.prize - 3) * 45"] // Ensures the wheel stays at the calculated prize position
         }
       }
     }

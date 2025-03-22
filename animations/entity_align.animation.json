@@ -1,15 +1,15 @@
 {
   "format_version": "1.8.0",
   "animations": {
-    //animation that locks the rotation of the object to be facing one of the 4 cardinal directions
+    // Animation that locks the rotation of the object to be facing one of the 4 cardinal directions
     "animation.entity.align": {
-      "loop": "hold_on_last_frame",
-      "animation_length": 0.0417,
+      "loop": "hold_on_last_frame", // The animation will hold on the last frame (no repeat)
+      "animation_length": 0.0417, // Duration of the animation is 0.0417 seconds (about one tick)
       "bones": {
         "root": {
           "rotation": [
             0,
-            "(Math.round(q.body_y_rotation / 90) * 90) - q.body_y_rotation",
+            "(Math.round(q.body_y_rotation / 90) * 90) - q.body_y_rotation", // This rounds the Y rotation to the nearest multiple of 90 degrees, aligning it to one of the 4 cardinal directions (0, 90, 180, 270)
             0
           ]
         }

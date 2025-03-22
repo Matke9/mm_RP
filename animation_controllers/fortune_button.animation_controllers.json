@@ -5,6 +5,7 @@
       "initial_state": "default",
       "states": {
         "default": {
+          // Transition to "press" state when the variant is 1
           "transitions": [
             {
               "press": "query.variant == 1"
@@ -12,9 +13,11 @@
           ]
         },
         "press": {
+          // Plays the "button_press" animation when in this state
           "animations": ["button_press"],
           "transitions": [
             {
+              // Returns to "default" state when the variant is 0
               "default": "query.variant == 0"
             }
           ]

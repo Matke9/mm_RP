@@ -2,37 +2,37 @@
   "format_version": "1.8.0",
   "animations": {
     "animation.gate.gate_open": {
-      "loop": "hold_on_last_frame",
-      "animation_length": 1,
+      "loop": "hold_on_last_frame", // Keeps the final frame when the animation ends
+      "animation_length": 1, // Animation lasts for 1 second
       "bones": {
         "LeftWing": {
           "rotation": {
-            "0.0": [0, 0, 0],
-            "1.0": [0, -90, 0]
+            "0.0": [0, 0, 0], // Initial position
+            "1.0": [0, -90, 0] // Rotates -90 degrees around the Y-axis over 1 second
           }
         },
         "RightWing": {
           "rotation": {
-            "0.0": [0, 0, 0],
-            "1.0": [0, 90, 0]
+            "0.0": [0, 0, 0], // Initial position
+            "1.0": [0, 90, 0] // Rotates 90 degrees around the Y-axis over 1 second
           }
         }
       }
     },
     "animation.gate.gate_close": {
-      "loop": "hold_on_last_frame",
-      "animation_length": 1,
+      "loop": "hold_on_last_frame", // Keeps the final frame when the animation ends
+      "animation_length": 1, // Animation lasts for 1 second
       "bones": {
         "LeftWing": {
           "rotation": {
-            "0.0": [0, -90, 0],
-            "1.0": [0, 0, 0]
+            "0.0": [0, -90, 0], // Starts at -90 degrees
+            "1.0": [0, 0, 0] // Rotates back to the original position
           }
         },
         "RightWing": {
           "rotation": {
-            "0.0": [0, 90, 0],
-            "1.0": [0, 0, 0]
+            "0.0": [0, 90, 0], // Starts at 90 degrees
+            "1.0": [0, 0, 0] // Rotates back to the original position
           }
         }
       }

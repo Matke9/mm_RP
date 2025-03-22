@@ -7,27 +7,27 @@
         "default": {
           "transitions": [
             {
-              "spin": "query.variant == 1"
+              "spin": "query.variant == 1" // Transitions to "spin" state when variant is 1
             }
           ]
         },
         "stay": {
-          "animations": ["wheel_stay"],
+          "animations": ["wheel_stay"], // Used to avoid the wheel going back to the original rotation
           "transitions": [
             {
-              "spin": "query.variant == 1"
+              "spin": "query.variant == 1" // Switches to "spin" state when variant is 1
             }
           ]
         },
         "spin": {
-          "animations": ["wheel_spin"],
+          "animations": ["wheel_spin"], // Plays "wheel_spin" animation
           "transitions": [
             {
-              "stay": "query.variant == 0"
+              "stay": "query.variant == 0" // Returns to "stay" state when variant is 0
             }
           ],
           "on_entry": [
-            "variable.prize = query.has_property('mm:prize') ? query.property('mm:prize') : 0;"
+            "variable.prize = query.has_property('mm:prize') ? query.property('mm:prize') : 0;" // Stores prize value if it exists, otherwise sets it to 0
           ]
         }
       }

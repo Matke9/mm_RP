@@ -2,21 +2,21 @@
   "format_version": "1.10.0",
   "animation_controllers": {
     "controller.animation.gate": {
-      "initial_state": "closed",
+      "initial_state": "closed", // The gate starts in the "closed" state
       "states": {
         "closed": {
-          "animations": ["gate_close"],
+          "animations": ["gate_close"], // Plays "gate_close" animation when in this state
           "transitions": [
             {
-              "open": "query.variant == 1"
+              "open": "query.variant == 1" // Switches to "open" state when variant is 1
             }
           ]
         },
         "open": {
-          "animations": ["gate_open"],
+          "animations": ["gate_open"], // Plays "gate_open" animation when in this state
           "transitions": [
             {
-              "closed": "query.variant == 0"
+              "closed": "query.variant == 0" // Switches back to "closed" state when variant is 0
             }
           ]
         }
