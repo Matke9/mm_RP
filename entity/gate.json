@@ -4,28 +4,29 @@
     "description": {
       "identifier": "mm:gate",
       "materials": {
-        "default": "entity_alphatest"
+        "default": "entity_alphatest" // Material used for rendering with alpha transparency
       },
       "textures": {
-        "default": "textures/entity/door"
+        "default": "textures/entity/door" // The texture applied to the entity
       },
       "geometry": {
-        "default": "geometry.gate"
+        "default": "geometry.gate" // The geometry (model) for the entity
       },
-      "render_controllers": ["controller.render.gate"],
+      "render_controllers": ["controller.render.gate"], // The render controller for handling entity rendering
       "animations": {
-        "gate_open": "animation.gate.gate_open",
-        "gate_close": "animation.gate.gate_close",
-        "align_rotation": "animation.entity.align"
+        "gate_open": "animation.gate.gate_open", // The animation for the gate opening
+        "gate_close": "animation.gate.gate_close", // The animation for the gate closing
+        "align_rotation": "animation.entity.align" // The animation to align the rotation of the gate
       },
       "animation_controllers": [
-        { "openclose": "controller.animation.gate" },
-        { "align": "controller.animation.entity_align" }
+        { "openclose": "controller.animation.gate" }, // Controller to manage the open/close animation
+        { "align": "controller.animation.entity_align" } // Controller for aligning the rotation of the entity
       ],
       "spawn_egg": {
-        "texture": "gate_item"
+        "base_color": "#394138",
+        "overlay_color": "#44350d"
       },
-      "scripts": {}
+      "scripts": {} // I got an error without this empty component
     }
   }
 }

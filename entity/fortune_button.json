@@ -4,31 +4,32 @@
     "description": {
       "identifier": "mm:fortune_button",
       "materials": {
-        "default": "entity_alphatest"
+        "default": "entity_alphatest" // The material used for rendering the entity (alpha-tested for transparency)
       },
       "textures": {
-        "default": "textures/entity/button"
+        "default": "textures/entity/button" // The texture applied to the entity
       },
       "geometry": {
-        "default": "geometry.fortune_button"
+        "default": "geometry.fortune_button" // The geometry for the entity (model)
       },
-      "render_controllers": ["controller.render.fortune_button"],
+      "render_controllers": ["controller.render.fortune_button"], // The render controller for controlling how the entity is drawn
       "animations": {
-        "button_press": "animation.fortune_button.press",
-        "align_rotation": "animation.entity.align"
+        "button_press": "animation.fortune_button.press", // The animation for when the button is pressed
+        "align_rotation": "animation.entity.align" // The animation for aligning the rotation of the entity
       },
       "animation_controllers": [
         {
-          "press": "controller.animation.fortune_button"
+          "press": "controller.animation.fortune_button" // The controller used when the button is pressed
         },
         {
-          "allign": "controller.animation.entity_align"
+          "allign": "controller.animation.entity_align" // The controller for aligning the rotation
         }
       ],
       "spawn_egg": {
-        "texture": "gate_item"
+        "base_color": "#00c3ff",
+        "overlay_color": "#ff0000"
       },
-      "scripts": {}
+      "scripts": {} // I got an error without this empty component
     }
   }
 }

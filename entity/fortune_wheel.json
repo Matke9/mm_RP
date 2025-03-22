@@ -4,32 +4,33 @@
     "description": {
       "identifier": "mm:fortune_wheel",
       "materials": {
-        "default": "entity_alphatest"
+        "default": "entity_alphatest" // Material used for rendering with alpha transparency
       },
       "textures": {
-        "default": "textures/entity/wheel"
+        "default": "textures/entity/wheel" // The texture applied to the entity
       },
       "geometry": {
-        "default": "geometry.fortune_wheel"
+        "default": "geometry.fortune_wheel" // The geometry (model) for the entity
       },
-      "render_controllers": ["controller.render.fortune_wheel"],
+      "render_controllers": ["controller.render.fortune_wheel"], // The render controller for handling entity rendering
       "animations": {
-        "wheel_spin": "animation.fortune_wheel.spin",
-        "wheel_stay": "animation.fortune_wheel.stay", //just the last frame of the spinning animation to prevent going back to the default rotation
-        "align_rotation": "animation.entity.align"
+        "wheel_spin": "animation.fortune_wheel.spin", // The animation for the spinning action of the wheel
+        "wheel_stay": "animation.fortune_wheel.stay", // The animation to stop the wheel at the last frame to prevent it resetting
+        "align_rotation": "animation.entity.align" // The animation to align the rotation of the wheel
       },
       "animation_controllers": [
         {
-          "spin": "controller.animation.fortune_wheel"
+          "spin": "controller.animation.fortune_wheel" // Controller to manage the wheel spinning animation
         },
         {
-          "allign": "controller.animation.entity_align"
+          "allign": "controller.animation.entity_align" // Controller for aligning the rotation of the entity
         }
       ],
       "spawn_egg": {
-        "texture": "gate_item"
+        "base_color": "#00c3ff",
+        "overlay_color": "#ff0000"
       },
-      "scripts": {}
+      "scripts": {} // I got an error without this empty component
     }
   }
 }
